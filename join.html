@@ -69,60 +69,31 @@
             text-align: center;
         }
 
-        .join-form {
-            background-color: #1a1a1a;
-            padding: 30px;
-            border-radius: 10px;
-            border: 2px solid #00ff00;
-        }
-
-        .join-form input, .join-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            background-color: #0a0a0a;
-            border: 1px solid #333;
-            color: #ffffff;
-            border-radius: 5px;
-            font-family: 'Tajawal', sans-serif;
-            font-size: 16px;
-        }
-
-        .join-form input:focus, .join-form textarea:focus {
-            border-color: #00ff00;
-            outline: none;
-        }
-
-        .join-form label {
-            font-weight: 700;
-            color: #00ff00;
-        }
-
-        .btn-submit {
-            width: 100%;
-            padding: 15px;
+        .btn-neon {
+            display: inline-block;
             background-color: #00ff00;
+            border: 2px solid #00ff00;
             color: #000000;
-            border: none;
-            font-size: 20px;
+            padding: 20px 50px;
+            font-size: 24px;
             font-weight: 900;
+            text-decoration: none;
             cursor: pointer;
-            border-radius: 5px;
-            font-family: 'Tajawal', sans-serif;
-            margin-top: 15px;
             transition: 0.3s;
+            border-radius: 10px;
+            margin: 15px 0;
         }
 
-        .btn-submit:hover {
-            background-color: #ffffff;
-            color: #000000;
+        .btn-neon:hover {
+            background-color: #000000;
+            color: #00ff00;
             box-shadow: 0 0 30px #00ff00;
         }
 
         .requirements {
             background-color: #001a00;
             border: 2px solid #00ff00;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
             margin: 20px 0;
         }
@@ -130,6 +101,32 @@
         .requirements h3 {
             color: #00ff00;
             margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .requirements p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .info-box {
+            background-color: #1a1a1a;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .info-box h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #00ff00;
+            font-weight: 900;
+            font-size: 20px;
         }
 
         footer {
@@ -145,6 +142,10 @@
             .navbar {
                 flex-direction: column;
                 gap: 10px;
+            }
+            .btn-neon {
+                padding: 15px 30px;
+                font-size: 18px;
             }
         }
     </style>
@@ -164,7 +165,7 @@
 <section>
     <div class="center">
         <h2 class="section-title">📢 انضم إلى MCA</h2>
-        <p style="color:#cccccc; margin-bottom:20px;">لتحقيق الأمن والأمان، انضم لأقوى كلان جزائري 🇩🇿</p>
+        <p style="color:#cccccc; font-size:18px; margin-bottom:20px;">لتحقيق الأمن والأمان، انضم لأقوى كلان جزائري 🇩🇿</p>
     </div>
 
     <div class="requirements">
@@ -176,29 +177,27 @@
         <p>✅ حماية التجمع بكل ما تملك 🇩🇿🔥</p>
     </div>
 
-    <div class="join-form">
-        <h3 style="color:#00ff00; text-align:center; margin-bottom:20px;">نموذج الانضمام</h3>
-        <form>
-            <label>🆔 اسمك في اللعبة:</label>
-            <input type="text" placeholder="أدخل اسمك في CPM" required>
-
-            <label>🔢 معرف اللاعب (ID):</label>
-            <input type="text" placeholder="أدخل رقم ID" required>
-
-            <label>⏰ هل تستطيع الحضور يومياً الساعة 10:00؟</label>
-            <input type="text" placeholder="نعم / لا" required>
-
-            <label>🦅 لماذا تريد الانضمام لـ MCA؟</label>
-            <textarea rows="4" placeholder="اكتب سبب انضمامك..." required></textarea>
-
-            <label>📱 حسابك للتواصل (ديسكورد / تليغرام):</label>
-            <input type="text" placeholder="@username" required>
-
-            <button type="submit" class="btn-submit">🛡️ تقديم طلب الانضمام</button>
-        </form>
-        <p style="text-align:center; color:#00ff00; margin-top:15px; font-weight:900;">
+    <div class="center" style="margin: 40px 0;">
+        <p class="highlight">📝 للتقديم، اضغط على الزر أدناه واملأ النموذج:</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5WpUVSHWAHaBM-9icoVtpZaWPLeTFdFXM0iycMFx708Uq7g/viewform?usp=publish-editor" target="_blank" class="btn-neon">
+            🛡️ تقديم طلب الانضمام
+        </a>
+        <p style="color:#ff0000; margin-top:15px; font-weight:900;">
             ⚠️ الي يطلب رتبة ياخذ إنذار بدون تفاهم ❌
         </p>
+    </div>
+
+    <div class="info-box">
+        <h3>📩 أين تصل طلبات الانضمام؟</h3>
+        <p>✅ تصل مباشرة إلى إدارة الكلان</p>
+        <p>✅ تتم مراجعة الطلب والرد عليك خلال 24 ساعة</p>
+        <p>✅ سيتم التواصل معك عبر الحساب الذي كتبته في النموذج</p>
+    </div>
+
+    <div class="info-box" style="background-color:#001a00;">
+        <h3>🔥 مكافأة إحضار الأعضاء</h3>
+        <p>👥 الي يضيف 4 أعضاء متفاعلين يصعد رتبة</p>
+        <p>⬆️ وكل ما يضيف أكثر يصعد أكثر 🔥</p>
     </div>
 </section>
 

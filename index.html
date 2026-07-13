@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA Clan - الصفحة الرئيسية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.8;
+        }
+
+        .navbar {
+            background-color: #111111;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #00ff00;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 28px;
+            font-weight: 900;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #00ff00;
+        }
+
+        .btn-neon {
+            display: inline-block;
+            background-color: #00ff00;
+            border: 2px solid #00ff00;
+            color: #000000;
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: 900;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+            margin: 8px;
+        }
+
+        .btn-neon:hover {
+            background-color: #000000;
+            color: #00ff00;
+            box-shadow: 0 0 25px #00ff00;
+        }
+
+        .btn-neon.outline {
+            background-color: transparent;
+            color: #00ff00;
+        }
+
+        .btn-neon.outline:hover {
+            background-color: #00ff00;
+            color: #000000;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9));
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            font-weight: 900;
+            color: #00ff00;
+            text-shadow: 0 0 40px #00ff00;
+            margin-bottom: 10px;
+        }
+
+        .hero .tagline {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 900;
+            color: #00ff00;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #00ff00;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px 0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+
+        .alert-box {
+            background-color: #001a00;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .warning-box {
+            background-color: #1a1a00;
+            border: 2px solid #ff0000;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #111111;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #00ff00;
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">🛡️ MCA</div>
+    <div>
+        <a href="index.html">🏠 الرئيسية</a>
+        <a href="rules.html">📜 القوانين</a>
+        <a href="ranks.html">🦅 الرتب والرواتب</a>
+        <a href="join.html">📢 انضم للكلان</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>MCA</h1>
+    <p class="tagline">لتحقيق الأمن والأمان تم افتتاح كلان MCA</p>
+    <p style="color:#00ff00; font-size:20px; margin-bottom:30px;">🇩🇿 كلان جزائري | قوة - انضباط - أخوة 🇩🇿</p>
+    <div>
+        <a href="rules.html" class="btn-neon">📜 القوانين</a>
+        <a href="ranks.html" class="btn-neon outline">🦅 الرتب والرواتب</a>
+    </div>
+</section>
+
+<section>
+    <div class="center">
+        <h2 class="section-title">🛡️ عن كلان MCA</h2>
+    </div>
+    <div class="card">
+        <h3>🎯 هدفنا</h3>
+        <p>تحقيق الأمن والأمان لجميع الأعضاء داخل اللعبة. MCA هو كلان جزائري يجمع أقوى اللاعبين تحت راية واحدة. الانضباط والاحترام هما أساسنا.</p>
+    </div>
+    <div class="card">
+        <h3>⏰ التجمعات</h3>
+        <p>🗓️ كل يوم في الساعة <strong>10:00</strong> بتوقيت الجزائر</p>
+        <p>⏳ ينتهي التجمع الساعة <strong>10:30</strong></p>
+        <p style="color:#00ff00;">⚠️ مطلوب منك أن تحمي كل شيء في التجمع 🇩🇿🔥</p>
+    </div>
+    <div class="alert-box">
+        <p>🟢 للتذكير: 4 إنذارات = طرد نهائي من الكلان</p>
+        <p>🟩 الأول | 🟨 الثاني | 🟧 الثالث | 🟥 الرابع (طرد)</p>
+    </div>
+</section>
+
+<section>
+    <div class="center">
+        <h2 class="section-title">🔥 المسابقات</h2>
+    </div>
+    <div class="card" style="text-align:center;">
+        <h3>🎁 مسابقات كل أسبوع</h3>
+        <p>🗓️ كل يوم جمعة</p>
+        <p style="color:#00ff00; font-size:24px; font-weight:900;">🇩🇿👑</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 كلان MCA - لتحقيق الأمن والأمان | جميع الحقوق محفوظة</p>
+    <p style="color:#00ff00;">🇩🇿 MCA - العز والفخر 🇩🇿</p>
+</footer>
+
+</body>
+  </html>
